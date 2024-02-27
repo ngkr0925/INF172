@@ -1,0 +1,16 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+}
+
+/* Centering the <section> content */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+header h1 {
+  text-align: center; /* Center the text inside the header */
+}
