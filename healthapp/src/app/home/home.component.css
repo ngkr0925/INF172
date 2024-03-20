@@ -1,24 +1,78 @@
-.container {
-  width: 80%;
-  margin: auto;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px; /* To ensure content is not hidden behind the nav */
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: flex; /* Added for flexbox layout */
+  justify-content: space-around; /* Distributes space around items */
+  align-items: center; /* Vertically centers items */
+  z-index: 1000;
+}
+
+nav .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  background: #f4f4f4;
+  padding: 20px;
   text-align: center;
 }
 
-header h1 {
-  color: #0275d8;
+#feature1 img {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Keeps the aspect ratio */
+  display: block; /* Prevents unwanted space below the image */
+  margin: 0 auto; /* Centers the image */
 }
 
-.features {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+#feature2 img {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Keeps the aspect ratio */
+  display: block; /* Prevents unwanted space below the image */
+  margin: 0 auto; /* Centers the image */
 }
 
-.feature-item {
-  width: 30%;
+section {
+  padding: 20px;
+  margin: 20px 0;
 }
 
-.feature-item img {
-  width: 100%;
-  height: auto;
+section h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 }

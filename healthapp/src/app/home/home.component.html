@@ -1,26 +1,42 @@
-<div class="container">
-  <header>
-    <h1>Welcome to FuturaHealth</h1>
-    <p>Your future betting platform on health data.</p>
-  </header>
-  <section>
-    <h2>Features</h2>
-    <div class="features">
-      <div class="feature-item">
-        <img src="placeholder1.jpg" alt="Feature 1">
-        <h3>Feature 1</h3>
-        <p>Description for feature 1.</p>
-      </div>
-      <div class="feature-item">
-        <img src="placeholder2.jpg" alt="Feature 2">
-        <h3>Feature 2</h3>
-        <p>Description for feature 2.</p>
-      </div>
-      <div class="feature-item">
-        <img src="placeholder3.jpg" alt="Feature 3">
-        <h3>Feature 3</h3>
-        <p>Description for feature 3.</p>
-      </div>
-    </div>
-  </section>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Features</title>
+  <link rel="stylesheet" href="home.component.css">
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <a href="#header">
+      <img src="/assets/images/FuturaHealthLogo.png" alt="Company Logo" height="50"> <!-- Adjust height as needed -->
+    </a>
+  </div>
+    <ul>
+      <li><a routerLink="/feature1">Trade</a></li>
+      <li><a routerLink="/feature2">Bet</a></li>
+    </ul>
+</nav>
+
+<header>
+  <h1>Introducing FuturaHealth!</h1>
+  <p>The World's First Online Betting and Trading Platform for Public Health Data</p>
+</header>
+<section id="feature1">
+  <a routerLink="/feature1" style="text-decoration: none; color: inherit;">
+  <h2>Trade</h2>
+  </a>
+  <p style="text-align: center">
+    Embark on an engaging journey where the world of trading meets the pivotal arena of public health education.</p>
+  <img src="/assets/images/FAQ%20Trade.png" alt="Trading FAQ Screen" width="300" height="600">
+</section>
+<section id="feature2">
+  <a routerLink="/feature2" style="text-decoration: none; color: inherit;">
+    <h2>Bet</h2>
+  </a>
+  <p style="text-align: center">Discover the unique blend of excitement and learning with our platform, where the thrill of betting merges seamlessly with gaining invaluable insights into public health issues.</p>
+  <img src="/assets/images/FAQ%20Bet.png" alt="Betting FAQ Screen" width="300" height="600">
+</section>
+</body>
+</html>

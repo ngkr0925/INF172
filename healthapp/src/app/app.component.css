@@ -1,6 +1,7 @@
 /* Global Styles */
 body, html {
   margin: 0;
+  background-color: black;
 }
 
 /* Centering the <section> content */
